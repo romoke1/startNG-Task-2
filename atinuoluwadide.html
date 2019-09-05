@@ -34,6 +34,39 @@ h3 {
 }
 </style>
 
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<!--link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"-->
+<style>
+h1 {
+    color: blue;
+    font-size: 45px;
+    } 
+h2 {
+    color: brown;
+    font-family: Lobster;
+    }
+h3 {
+    color: coral;
+    font-family: Poppins, monospace;
+    }
+.thick-coral-border {
+    border-color: coral;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-radius: 60%;
+}
+#pink-background {
+    background-color: pink;
+}
+.smaller-image {
+    width: 200px;
+}
+
+.input-field {
+    color:brown ;
+}
+</style>
 <head>
  <title>My Portfolio
 
@@ -133,5 +166,40 @@ performance. <br> <i> <b>Looking for an opportunity to learn and grow in a produ
 <h3>CONTACT ME</h3>
 <a href="https://github.com/romoke1" target="_blank"><img src="img/github.jpg" alt="" width="100" height="100"></a>
 <a href="https://twitter.com/Tinuu_O" target="_blank"><img src="img/twitter.png" alt="" width="100" height="100"></a>
+
+
+<form method="post" onsubmit="validateForm()">
+<h4 class="left-subheader"> CONTACT ME</h4>
+<div>
+    <input list="title" class="input-field" name="title" placeholder="Title">
+    <datalist id="title">
+        <option value="Ms.">
+        <option value="Mrs">
+        <option value="Mr">
+    </datalist>
+</div>
+<br>
+<div>
+    <input type="text" class="input-field" id="firstname" placeholder="First Name"/>
+    
+</div>
+<br>
+<div>
+        <input type="text" class="input-field"  placeholder="Last Name"/>
+        
+    </div>
+<br>
+<div>
+        <input type="text" class="input-field"  placeholder="Email Address"/>
+        
+    </div>
+    <br>
+    <div>
+        <textarea type="text" class="large-input-field" minlength="20" placeholder="Message"></textarea>
+    </div>
+    <br>
+    <button class="button" id="button" onclick="return validateForm()" style="background-color: aqua"> Send Message </button>
+</form>
+
 </body>
 </html>
